@@ -10,10 +10,6 @@
     <link href="css/ionicons.css" rel="stylesheet">
     <link href="css/ionicons.min.css" rel="stylesheet">
 
-    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
-    <link href="css/ionic.app.css" rel="stylesheet">
-    -->
-
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
@@ -34,12 +30,155 @@
       </ion-header-bar>
       -->
 
+        <ion-nav-bar class="bar-dark">
+          <ion-nav-back-button>
+          </ion-nav-back-button>
+        </ion-nav-bar>
+        
         <ion-nav-view>
         </ion-nav-view>
+        
+        <script type="text/ng-template" id="state1.html">
+          <ion-view view-title="Home">
+            <div class="bar bar-subheader">
+              <h2 class="title">I am state 1!</h2>
+            </div>
+            
+            <ion-content>
+              <ion-list>
+                <ion-item ng-repeat="category in categories" menu-close ui-sref="state2">
+                </ion-item>
+                
+                <div class="list card">
+                  <div class="item item-avatar">
+                      <img src="img/nibbles.jpg">
+                      <h2>Nibbles</h2>
+                      <p>Starters</p>
+                  </div>
+
+                  <div class="item item-image">
+                      <img src="img/nibbles.jpg">
+                  </div>
+
+                  <a class="item item-icon-left" ui-sref="state2">
+                      <i class="icon ion-pizza"></i> 
+                      Go to nibbles
+                  </a>
+                </div><!-- end list card -->
+              </ion-list>
+              
+              <button class="button button-full button-energized" ui-sref="state2">
+                  Go to state 2
+              </button>
+              <!-- <a href="#/state2">Go to state 2</a> -->
+            </ion-content>
+          </ion-view>
+        </script>
+    
+        <script type="text/ng-template" id="state2.html">
+          <ion-view view-title="Two">
+            <div class="bar bar-subheader">
+              <h2 class="title">I am state 2!</h2>
+            </div>
+            
+            <ion-content>
+              <div class="list">
+              
+                <a class="item item-icon-left item-button-right" href="#">
+                  <i class="icon ion-pizza"></i>
+                  <h2>9" Pizza</h2>
+                  <p>Calories per slice</p>
+                  
+                  <button class="button button-positive">
+                    +250
+                  </button>
+                </a>
+                
+                <a class="item item-icon-left item-button-right" href="#">
+                  <i class="icon ion-pizza"></i>
+                  <h2>12" Pizza</h2>
+                  <p>Calories per slice</p>
+                  
+                  <button class="button button-positive">
+                    +350
+                  </button>
+                </a>
+                
+                <a class="item item-icon-left item-button-right" href="#">
+                  <i class="icon ion-pizza"></i>
+                  <h2>15" Pizza</h2>
+                  <p>Calories per slice</p>
+                  
+                  <button class="button button-positive">
+                    +450
+                  </button>
+                </a>
+                
+                <a class="item item-icon-left item-button-right" href="#">
+                  <i class="icon ion-ios-nutrition"></i>
+                  <h2>Carrots</h2>
+                  <p>Calories per 100g</p>
+                 
+                  <button class="button button-positive">
+                    +50
+                  </button>
+                </a>
+                
+                <a class="item item-icon-left item-button-right" href="#">
+                  <i class="icon ion-ios-nutrition"></i>
+                  <h2>Parsnips</h2>
+                  <p>Calories per 100g</p>
+                 
+                  <button class="button button-positive">
+                    +20
+                  </button>
+                </a>
+                
+                <a class="item item-icon-left item-button-right" href="#">
+                  <i class="icon ion-ios-nutrition"></i>
+                  <h2>Yams</h2>
+                  <p>Calories per 100g</p>
+                 
+                  <button class="button button-positive">
+                    +50
+                  </button>
+                </a>
+                
+                <a class="item item-icon-left item-button-right" href="#">
+                  <i class="icon ion-ios-nutrition"></i>
+                  <h2>Potatoes</h2>
+                  <p>Calories per 100g</p>
+                 
+                  <button class="button button-positive">
+                    +20
+                  </button>
+                </a>
+                
+              </div>
+              
+              <button class="button button-full button-assertive" ui-sref="state3">
+                  Go to state 3
+              </button>
+              <!-- <a href="#/state3">Go to state 3.</a> -->
+            </ion-content>
+          </ion-view>
+        </script>
+        
+        <script type="text/ng-template" id="state3.html">
+          <ion-view view-title="Three">
+            <div class="bar bar-subheader">
+              <h2 class="title">I am state 3!</h2>
+            </div>
+            <ion-content>
+              <h2>I am state 3!</h2>
+              <p>CounterCals here!</p>
+            </ion-content>
+          </ion-view>
+        </script>
+
 
         <!-- scrolling aid -->
-        <ion-content overflow-scroll="true" class="has-header">
-        </ion-content>
+        <ion-content overflow-scroll="true" class="has-header"></ion-content>
 
         <!-- footer tabs -->
         <ion-tabs class="tabs-dark">
@@ -57,43 +196,48 @@
 
             <!-- Tab Content 2 -->
             <ion-tab title="About" icon-on="ion-information-circled" icon-off="ion-information-circled">
-                <ion-header-bar class="bar-dark">
-                    <h1 class="title">About</h1>
-                </ion-header-bar>
+              <ion-header-bar class="bar-dark">
+                  <h1 class="title">About</h1>
+              </ion-header-bar>
 
-                <ion-content>
-                    <!-- about info card -->
-                    <div class="list card">
+              <ion-content>
+                <!-- about info card -->
+                <div class="list card">
 
-                        <!-- title & image -->
-                        <div class="item item-avatar">
-                            <img src="img/count_logo.jpg" alt="logo" />
-                            <h2>Calorie Counter</h2>
-                            <p>What we can do for you!</p>
-                        </div>
+                  <!-- title & image -->
+                  <div class="item item-avatar">
+                    <img src="img/count_logo.jpg" alt="logo" />
+                    <h2>Calorie Counter</h2>
+                    <p>What we can do for you!</p>
+                  </div>
 
-                        <!-- logo & info -->
-                        <div class="item item-body">
-                            <img class="full-image" src="img/count_logo.jpg" alt="logo" />
-                            <p>
-                                Calories are defined as little creatures that live in your wardrobe and sew your clothes tighter every night! They need food calories to have the energy to do all of this damage and food calories are the amount of energy needed to raise the temperature of one kilogram of water by one degree Celsius. The large calorie is thus equal to 1000 small calories or one kilocalorie.
-                            </p>
-                        </div>
+                  <!-- logo & info -->
+                  <div class="item item-body">
+                    <img class="full-image" src="img/count_logo.jpg" alt="logo" />
+                    <p>
+                        Calories are defined as little creatures that live in your wardrobe
+                        and sew your clothes tighter every night! They need food calories to
+                        have the energy to do all of this damage and food calories are the
+                        amount of energy needed to raise the temperature of one kilogram of
+                        water by one degree Celsius. The large calorie is thus equal to 1000
+                        small calories or one kilocalorie.
+                    </p>
+                  </div>
 
-                        <!-- social media icons -->
-                        <div class="item tabs tabs-secondary tabs-icon-left">
-                            <a class="tab-item" href="#">
-                                <i class="icon ion-thumbsup"></i> Like
-                            </a>
-                            <a class="tab-item" href="#">
-                                <i class="icon ion-chatbox"></i> Comment
-                            </a>
-                            <a class="tab-item" href="#">
-                                <i class="icon ion-share"></i> Share
-                            </a>
-                        </div>
-                    </div><!-- end card -->
-                </ion-content>
+                  <!-- social media icons -->
+                  <div class="item tabs tabs-secondary tabs-icon-left">
+                      <a class="tab-item" href="#">
+                          <i class="icon ion-thumbsup"></i> Like
+                      </a>
+                      <a class="tab-item" href="#">
+                          <i class="icon ion-chatbox"></i> Comment
+                      </a>
+                      <a class="tab-item" href="#">
+                          <i class="icon ion-share"></i> Share
+                      </a>
+                  </div>
+                </div><!-- end card -->
+              </ion-content>
             </ion-tab>
 
             <!-- Tab Content 3 -->
@@ -102,6 +246,7 @@
                     <h1 class="title">Contact</h1>
                 </ion-header-bar>
                 
+                <!-- Contact List -->
                 <ion-content>
                     <div class="list">
                         <a class="item item-icon-left" href="mailto:homer@example.com">

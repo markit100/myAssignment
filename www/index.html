@@ -20,181 +20,34 @@
     <script src="js/app.js"></script>
 </head>
 
+<!--
+  'calorific' is the name of this angular module (js/app.js)
+-->
 <body ng-app="calorific">
 
-    <ion-pane>
-
-        <!-- header 
+      <!-- header 
       <ion-header-bar class="bar-stable">
         <h1 class="title">Calorie Counter</h1>
       </ion-header-bar>
       -->
 
+        <!--
+          The nav bar that will be updated as we navigate between views
+          Additional attributes set its look; ion-nav-bar icons
+        -->
         <ion-nav-bar class="bar-dark">
           <ion-nav-back-button>
           </ion-nav-back-button>
         </ion-nav-bar>
         
+        <!--
+          The views will be rendered in the <ion-nav-view> directive below
+          Templates are in the /templates folder (but you could also
+          have templates inline in this html file if you'd like).
+        -->
         <ion-nav-view>
         </ion-nav-view>
-        
-        <script type="text/ng-template" id="state1.html">
-          <ion-view view-title="Home">
-            <div class="bar bar-subheader">
-              <h2 class="title">I am state 1!</h2>
-            </div>
-            
-            <ion-content>
-              <ion-list>
-                <ion-item ng-repeat="category in categories" menu-close ui-sref="state2">
-                </ion-item>
-                
-                <div class="list card">
-                  <div class="item item-avatar">
-                      <img src="img/nibbles.jpg">
-                      <h2>Nibbles</h2>
-                      <p>Starters</p>
-                  </div>
-
-                  <div class="item item-image">
-                      <img src="img/nibbles.jpg">
-                  </div>
-
-                  <a class="item item-icon-left" ui-sref="state2">
-                      <i class="icon ion-pizza"></i> 
-                      Go to nibbles
-                  </a>
-                  
-                  <button class="button button-full button-energized" ui-sref="state2">
-                      <!-- <a href="#/state2">Go to state 2</a> -->
-                      Go to state 2
-                  </button>
-                  
-                </div><!-- end list card -->
-              </ion-list>
-              
-            </ion-content>
-          </ion-view>
-        </script>
-    
-        <script type="text/ng-template" id="state2.html">
-          <ion-view view-title="Two">
-            <div class="bar bar-subheader">
-              <h2 class="title">I am state 2!</h2>
-            </div>
-            
-            <ion-content>
-              <div class="list list-inset">
-              
-                <a class="item item-icon-left item-button-right" href="#">
-                  <i class="icon ion-pizza"></i>
-                  <h2>9" Pizza</h2>
-                  <p>Calories per slice</p>
-                  
-                  <button class="button button-positive">
-                    +250
-                  </button>
-                </a>
-                
-                <a class="item item-icon-left item-button-right" href="#">
-                  <i class="icon ion-pizza"></i>
-                  <h2>12" Pizza</h2>
-                  <p>Calories per slice</p>
-                  
-                  <button class="button button-positive">
-                    +350
-                  </button>
-                </a>
-                
-                <a class="item item-icon-left item-button-right" href="#">
-                  <i class="icon ion-pizza"></i>
-                  <h2>15" Pizza</h2>
-                  <p>Calories per slice</p>
-                  
-                  <button class="button button-positive">
-                    +450
-                  </button>
-                </a>
-                
-                <a class="item item-icon-left item-button-right" href="#">
-                  <i class="icon ion-ios-nutrition"></i>
-                  <h2>Carrots</h2>
-                  <p>Calories per 100g</p>
-                 
-                  <button class="button button-positive">
-                    +50
-                  </button>
-                </a>
-                
-                <a class="item item-icon-left item-button-right" href="#">
-                  <i class="icon ion-ios-nutrition"></i>
-                  <h2>Parsnips</h2>
-                  <p>Calories per 100g</p>
-                 
-                  <button class="button button-positive">
-                    +20
-                  </button>
-                </a>
-                
-                <a class="item item-icon-left item-button-right" href="#">
-                  <i class="icon ion-ios-nutrition"></i>
-                  <h2>Yams</h2>
-                  <p>Calories per 100g</p>
-                 
-                  <button class="button button-positive">
-                    +50
-                  </button>
-                </a>
-                
-                <a class="item item-icon-left item-button-right" href="#">
-                  <i class="icon ion-ios-nutrition"></i>
-                  <h2>Potatoes</h2>
-                  <p>Calories per 100g</p>
-                 
-                  <button class="button button-positive">
-                    +20
-                  </button>
-                </a>
-                
-                <button class="button button-full button-assertive" ui-sref="state3">
-                  <!-- <a href="#/state3">Go to state 3.</a> -->
-                  Go to state 3
-                </button>
-                
-              </div>
-              
-            </ion-content>
-          </ion-view>
-        </script>
-        
-        <script type="text/ng-template" id="state3.html">
-          <ion-view view-title="Three">
-            <div class="bar bar-subheader">
-              <h2 class="title">I am state 3!</h2>
-            </div>
-            <ion-content>
-              <h2>I am state 3!</h2>
-              <p><center>CounterCals here!</center></p>
-              
-              <div class="list list-inset">
-                <label class="item item-input">
-                    <input type="number" ng-model="count" />
-                </label>
-                
-                <button class="button button-block button-positive" ng-click="count = count + 1">
-                  Count
-                </button>
-    
-                <button class="button button-block button-positive" ng-click="count = 0">
-                    Reset
-                </button>
-              </div>
-              
-            </ion-content>
-          </ion-view>
-        </script>
-
-
+  
         <!-- scrolling aid -->
         <ion-content overflow-scroll="true" class="has-header"></ion-content>
 
@@ -324,6 +177,6 @@
           </ion-header-bar>
         </ion-tab>
         -->
-    </ion-pane>
+
 </body>
 </html>

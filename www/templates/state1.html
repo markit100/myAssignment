@@ -1,0 +1,42 @@
+<!--
+  This template loads for the 'state1' state (app.js)
+-->
+
+<ion-view view-title="Home">
+  <div class="bar bar-subheader">
+    <h2 class="title">I am state 1!</h2>
+  </div>
+  
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="category in categories" menu-close ui-sref="state2">
+      </ion-item>
+      
+      <div class="list card">
+        <div class="item item-avatar">
+            <img src="img/nibbles.jpg">
+            <h2>Nibbles</h2>
+            <p>Starters</p>
+        </div>
+
+        <div class="item item-image">
+            <img src="img/nibbles.jpg">
+        </div>
+
+        <a class="item item-icon-left icon-right ion-chevron-right" ui-sref="state2">
+            <i class="icon ion-pizza"></i> 
+            Go to nibbles
+        </a>
+      </div><!-- end list card -->
+      
+      <div class="list-inset"> 
+        <button class="button icon-right ion-chevron-right button-full button-energized" ui-sref="state2">
+            <!-- <a href="#/state2">Go to state 2</a> -->
+            Go to state 2
+        </button>
+      </div>
+      
+    </ion-list>
+    
+  </ion-content>
+</ion-view>

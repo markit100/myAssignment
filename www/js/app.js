@@ -7,30 +7,6 @@ angular.module('calorific', ['ionic'])
     
     $stateProvider
     
-    // setup an abstract state for the tabs directive
-    .state('tab', {
-      url: '/tab',
-      templateUrl: 'templates/tabs.html'
-    })
-    
-    .state('tab.about', {
-      url: '/about',
-      views: {
-        'about-tab': {
-          templateUrl: 'templates/about.html'
-        }
-      }
-    })
-    
-    .state('tab.contact', {
-      url: '/contact',
-      views: {
-        'contact-tab': {
-          templateUrl: 'templates/contact.html'
-        }
-      }
-    })
-    
     // this is the food selection type
     .state('state1', {
         url: '/',
@@ -49,4 +25,24 @@ angular.module('calorific', ['ionic'])
         templateUrl: 'templates/state3.html'
     });
     
+    /*
+    // setup an abstract state for the tabs directive
+    .state('tab', {
+      url: '/tab',
+      abstract: true,
+      templateUrl: 'templates/tabs.html'    
+    })
+    
+    .state('tab.about', {
+        url: '/about',
+        templateUrl: 'templates/about.html'
+    })
+    
+    .state('tab.contact', {
+        url: '/contact',
+        templateUrl: 'templates/contact.html'
+    })
+    */
+
 })
+

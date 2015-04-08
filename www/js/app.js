@@ -1,4 +1,4 @@
-// Ionic calorific App
+// Ionic App
 
 // angular.module is a global place for creating, registering and retrieving Angular modules
 // 'calorific' is the name of this angular module example (also set in a <body> attribute in index.html)
@@ -21,23 +21,23 @@ angular.module('calorific', ['ionic', 'calorific.services', 'calorific.controlle
         templateUrl: 'templates/tabs.html'
     })
 
-    // the pet tab has its own child nav-view and history
-    .state('tab.pet-index', {
-        url: '/pets',
+    // the menu tab has its own child nav-view and history
+    .state('tab.menu-index', {
+        url: '/menus',
         views: {
-            'pets-tab': {
-                templateUrl: 'templates/pet-index.html',
-                controller: 'PetIndexCtrl'
+            'menus-tab': {
+                templateUrl: 'templates/menu-index.html',
+                controller: 'menuIndexCtrl'
             }
         }
     })
 
-    .state('tab.pet-detail', {
-        url: '/pet/:petId',
+    .state('tab.menu-detail', {
+        url: '/menu/:menuId',
         views: {
-            'pets-tab': {
-                templateUrl: 'templates/pet-detail.html',
-                controller: 'PetDetailCtrl'
+            'menus-tab': {
+                templateUrl: 'templates/menu-detail.html',
+                controller: 'menuDetailCtrl'
             }
         }
     })
@@ -61,6 +61,6 @@ angular.module('calorific', ['ionic', 'calorific.services', 'calorific.controlle
     });
 
     // if none of the above states are matched, use this as the fallback
-    $urlRouterProvider.otherwise('/tab/pets');
+    $urlRouterProvider.otherwise('/tab/menus');
 
 });

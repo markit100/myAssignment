@@ -1,0 +1,22 @@
+<!-- 
+  This template gets placed in the menu tab's <ion-nav-view> directive.
+  It was wired up in the app config (app.js) 
+  The 'menus' data comes from its $scope within menuIndexCtrl (controller.js)
+-->
+
+<ion-view title="Home">
+    <div class="bar bar-subheader">
+        <h2 class="title">Menu</h2>
+    </div>
+
+    <ion-content overflow-scroll="true">
+        <div class="list card">
+
+            <ion-item ng-repeat="menu in menus" type="item-text-wrap" href="#/tab/menu/{{menu.id}}">
+                <h3>{{menu.title}}</h3>
+                <p>{{menu.description}}</p>
+            </ion-item>
+
+        </div>
+    </ion-content>
+</ion-view>

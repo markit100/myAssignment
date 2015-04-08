@@ -1,13 +1,13 @@
 angular.module('calorific.services', [])
 
 /**
- * A simple example service that returns some data.
+ * A service that returns some data.
  */
-.factory('PetService', function () {
+.factory('menuService', function () {
     // Might use a resource here that returns a JSON array
 
-    // Some fake testing data
-    var pets = [
+    // testing data
+    var menus = [
         {
             id: 0,
             title: 'Breakfast',
@@ -32,11 +32,11 @@ angular.module('calorific.services', [])
 
     return {
         all: function () {
-            return pets;
+            return menus;
         },
-        get: function (petId) {
+        get: function (menuId) {
             // Simple index lookup
-            return pets[petId];
+            return menus[menuId];
         }
     }
 });

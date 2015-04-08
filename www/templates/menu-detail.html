@@ -1,0 +1,90 @@
+<!--
+  This template loads for the 'tab.menu-detail' state (app.js)
+  'menu' is a $scope variable created in the menuCtrl controller (controllers.js)
+  The menuCtrl pulls data from the menus service (service.js)
+  The menus service returns an array of menu data
+-->
+<ion-view title="{{menu.title}}">
+    <div class="bar bar-subheader">
+        <h2 class="title">We are the Dishes!</h2>
+    </div>
+
+    <ion-content padding="true" overflow-scroll="true" class="has-header">
+
+        <div id="myCalories">
+            <input type="number" ng-model="count" placeholder="0" />
+
+        </div>
+        <div class="list card">
+            <!-- ******** NB this displays original list; is link ******* -->
+
+            <p>{{ menu.description }}</p>
+
+            <!-- ******** NB this displays original list; is link ******* -->
+
+            <a class="item item-icon-left item-button-right">
+                <i class="icon ion-pizza"></i>
+                <h2>9" Pizza</h2>
+                <p>Calories per pizza</p>
+
+                <button class="button button-positive" ng-click="count = count + 250"> +250 </button>
+            </a>
+
+            <a class="item item-icon-left item-button-right">
+                <i class="icon ion-pizza"></i>
+                <h2>12" Pizza</h2>
+                <p>Calories per pizza</p>
+
+                <button class="button button-positive" ng-click="count = count + 350"> +350 </button>
+            </a>
+
+            <a class="item item-icon-left item-button-right">
+                <i class="icon ion-pizza"></i>
+                <h2>15" Pizza</h2>
+                <p>Calories per pizza</p>
+
+                <button class="button button-positive" ng-click="count = count + 450"> +450 </button>
+            </a>
+
+            <a class="item item-icon-left item-button-right">
+                <i class="icon ion-ios-nutrition"></i>
+                <h2>Carrots</h2>
+                <p>Calories per 100g</p>
+
+                <button class="button button-positive" ng-click="count = count + 50"> +50 </button>
+            </a>
+
+            <a class="item item-icon-left item-button-right">
+                <i class="icon ion-ios-nutrition"></i>
+                <h2>Parsnips</h2>
+                <p>Calories per 100g</p>
+
+                <button class="button button-positive" ng-click="count = count + 20"> +20 </button>
+            </a>
+
+            <a class="item item-icon-left item-button-right">
+                <i class="icon ion-ios-nutrition"></i>
+                <h2>Yams</h2>
+                <p>Calories per 100g</p>
+
+                <button class="button button-positive" ng-click="count = count + 50"> +50 </button>
+            </a>
+
+            <a class="item item-icon-left item-button-right">
+                <i class="icon ion-ios-nutrition"></i>
+                <h2>Potatoes</h2>
+                <p>Calories per 100g</p>
+
+                <button class="button button-positive" ng-click="count = count + 20"> +20 </button>
+            </a>
+
+            <p>
+                <a class="button icon ion-settings button-block" ng-click="count = 0">&nbsp;Reset</a>
+            </p>
+
+            <p>
+                <a class="button button-energized button-block icon ion-arrow-left-b" href="#/tab/menus">&nbsp;Back to Menu</a>
+            </p>
+        </div>
+    </ion-content>
+</ion-view>

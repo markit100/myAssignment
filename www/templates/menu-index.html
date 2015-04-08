@@ -12,9 +12,11 @@
     <ion-content overflow-scroll="true">
         <div class="list card">
 
-            <ion-item ng-repeat="menu in menus" type="item-text-wrap" href="#/tab/menu/{{menu.id}}">
+            <ion-item class="item-avatar item-icon-right" ng-repeat="menu in menus" type="item-text-wrap" href="#/tab/menu/{{menu.id}}">
+                <img ng-src="{{menu.food}}">
                 <h3>{{menu.title}}</h3>
                 <p>{{menu.description}}</p>
+                <i class="icon ion-chevron-right icon-accessory"></i>
             </ion-item>
 
         </div>

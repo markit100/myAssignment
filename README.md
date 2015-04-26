@@ -36,17 +36,22 @@ App operates as follows:
 1. Branches created as complexity increased
 2. Each file is commented
 
-## Execution and performance
-
-Execeuted and tested using localhost://8000/index  
-
 ## User Interface
 
 An external style sheet was used to minimally manage the UI. 
 
 ## Complexity
 
-The app makes use of a combination of elements such as tabbed menu, ionic side menu, lists and cards.
+The app makes use of a combination of elements such as;
+
+1. controllers 
+2. scope
+3. directives
+4. templates
+
+## Execution and performance
+
+Execeuted and tested using localhost://8000/index 
 
 ## Source code
 

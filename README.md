@@ -11,6 +11,7 @@ The app displays calories for common everyday foods that young Irish adults eat 
 The app uses the ionics framework mainly ionic tabbed menu, ionic side menu, list cards and ionic list. It in corporates images, javascript, angular js, HTML and CSS.
 
 App operates as follows: 
+
 1. The user is presented with a Menu, the menu contains foods which are categorised by mealtimes. 
 2. They can select a number of food items from a list of food categories. 
 3. Each food item has a predefined number of calories assigned to it.
@@ -19,8 +20,8 @@ App operates as follows:
 
 ## Comments
 
-Branches created as complexity increased
-Each file is commented
+1. Branches created as complexity increased
+2. Each file is commented
 
 ## Execution and performance
 

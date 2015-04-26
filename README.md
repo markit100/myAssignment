@@ -44,10 +44,14 @@ An external style sheet was used to minimally manage the UI.
 
 The app makes use of a combination of elements such as;
 
-1. controllers 
-2. scope
-3. directives
-4. templates
+1. tabbed menu
+2. ionic side menu
+3. lists
+4. cards
+5. controllers 
+6. scope
+7. directives
+8. templates
 
 ## Execution and performance
 

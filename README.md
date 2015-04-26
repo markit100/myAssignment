@@ -20,8 +20,8 @@ App operates as follows:
 
 ## Comments
 
-Branches created as complexity increased
-Each file is commented
+1. Branches created as complexity increased
+2. Each file is commented
 
 ## Execution and performance
 

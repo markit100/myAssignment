@@ -11,25 +11,61 @@ angular.module('calorific.services', [])
             food: 'img/nibbles.jpg',
             id: 0,
             title: 'Breakfast',
-            description: 'Cereal, Bread, pastries, milk, egg, sausage, puddin, rasher, potatoe chips'
+            description: 'Cereal, Bread, pastries, milk',
+            foodItem1: "Cereal",
+                    imgsrc1: "img/almond.jpg",
+                    calories1: 567,
+            foodItem2: "Bread",
+                    imgsrc2: "img/almond.jpg",
+                    calories2: 567,
+            foodItem3: "Pastries",
+                    imgsrc3: "img/almond.jpg",
+                    calories3: 567
         },
         {
             food: 'img/meats.jpg',
             id: 1,
             title: 'Lunch',
-            description: 'Wrap, Sandwich, Soup, Lasagne, Fish pie, Chicken, Beef, Turkey'
+            description: 'Wrap, Sandwich, Soup, Lasagne',
+            foodItem1: 'Wrap',
+                    imgsrc1: "img/almond.jpg",
+                    calories1: 567,
+            foodItem2: "Sandwich",
+                    imgsrc2: "img/almond.jpg",
+                    calories2: 567,
+            foodItem3: "Soup",
+                    imgsrc3: "img/almond.jpg",
+                    calories3: 567
         },
         {
             food: 'img/vegetables.jpg',
             id: 2,
             title: 'Dinner',
-            description: 'Lamb, Burger, Sheperds pie, Lasagne, Fish pie, Chicken, Beef, Turkey, Pasta Bake, Vegetables'
+            description: 'Lamb, Burger, Sheperds pie, Vegetables',
+            foodItem1: "Lamb",
+                    imgsrc1: "img/almond.jpg",
+                    calories1: 567,
+            foodItem2: "Burger",
+                    imgsrc2: "img/almond.jpg",
+                    calories2: 567,
+            foodItem3: "Shepherds Pie",
+                    imgsrc3: "img/almond.jpg",
+                    calories3: 567
         },
         {
             food: 'img/fishAndShellfish.jpg',
             id: 3,
             title: 'Snacks',
-            description: 'Biscuits, Cheese, Crisps, Pizza, Sweets, Yoghurt, Chocolate'
+            description: 'Biscuits, Sweets, Yoghurt, Chocolate',
+            foodItem1: "Biscuits",
+                    imgsrc1: "img/almond.jpg",
+                    calories1: 567,
+            foodItem2: "Sweets",
+                    imgsrc2: "img/almond.jpg",
+                    calories2: 567,
+            foodItem3: "Yoghurt",
+                    imgsrc3: "img/almond.jpg",
+                    calories3: 567,
         }
   ];
 

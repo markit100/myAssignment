@@ -33,5 +33,13 @@ textarea, input[type="number"]{
 textarea, input[type="search"]{
     height: 25px;
     width: 100%;
-    padding-left: 5px
+    padding-left: 10px
+}
+
+.item p{
+    white-space: normal !important;
+}
+
+#minus{
+    top: 53px;
 }

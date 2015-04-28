@@ -1,7 +1,7 @@
 angular.module('calorific.services', [])
 
 // A service that returns some data.
- 
+
 .factory('menuService', function () {
     // Might use a resource here that returns a JSON array
 
@@ -11,61 +11,73 @@ angular.module('calorific.services', [])
             food: 'img/nibbles.jpg',
             id: 0,
             title: 'Breakfast',
-            description: 'Cereal, Bread, pastries, milk',
+            description: 'Cereal, Bread, Pastry...',
             foodItem1: "Cereal",
-                    imgsrc1: "img/almond.jpg",
-                    calories1: 567,
+            data1: 'Calories per 250g serving',
+            imgsrc1: "img/almond.jpg",
+            calories1: 567,
             foodItem2: "Bread",
-                    imgsrc2: "img/almond.jpg",
-                    calories2: 567,
+            data2: 'Calories per wholegrain slice',
+            imgsrc2: "img/almond.jpg",
+            calories2: 567,
             foodItem3: "Pastries",
-                    imgsrc3: "img/almond.jpg",
-                    calories3: 567
+            data3: 'Calories per piece',
+            imgsrc3: "img/almond.jpg",
+            calories3: 567
         },
         {
             food: 'img/meats.jpg',
             id: 1,
             title: 'Lunch',
-            description: 'Wrap, Sandwich, Soup, Lasagne',
+            description: 'Wrap, Sandwich, Soup...',
             foodItem1: 'Wrap',
-                    imgsrc1: "img/almond.jpg",
-                    calories1: 567,
+            data1: 'Calories per wholegrain wrap',
+            imgsrc1: "img/almond.jpg",
+            calories1: 567,
             foodItem2: "Sandwich",
-                    imgsrc2: "img/almond.jpg",
-                    calories2: 567,
-            foodItem3: "Soup",
-                    imgsrc3: "img/almond.jpg",
-                    calories3: 567
+            data2: 'Calories per brown slice',
+            imgsrc2: "img/almond.jpg",
+            calories2: 567,
+            foodItem3: "Chicken soup",
+            data3: 'Calories per 250ml bowl',
+            imgsrc3: "img/almond.jpg",
+            calories3: 567
         },
         {
             food: 'img/vegetables.jpg',
             id: 2,
             title: 'Dinner',
-            description: 'Lamb, Burger, Sheperds pie, Vegetables',
+            description: 'Lamb, Burger, Sheperds...',
             foodItem1: "Lamb",
-                    imgsrc1: "img/almond.jpg",
-                    calories1: 567,
+            data1: 'Calories per 250g serving',
+            imgsrc1: "img/almond.jpg",
+            calories1: 567,
             foodItem2: "Burger",
-                    imgsrc2: "img/almond.jpg",
-                    calories2: 567,
+            data2: 'Calories per 1/4 pounder',
+            imgsrc2: "img/almond.jpg",
+            calories2: 567,
             foodItem3: "Shepherds Pie",
-                    imgsrc3: "img/almond.jpg",
-                    calories3: 567
+            data3: 'Calories per 250g serving',
+            imgsrc3: "img/almond.jpg",
+            calories3: 567
         },
         {
             food: 'img/fishAndShellfish.jpg',
             id: 3,
             title: 'Snacks',
-            description: 'Biscuits, Sweets, Yoghurt, Chocolate',
+            description: 'Biscuits, Sweets, Yoghurt...',
             foodItem1: "Biscuits",
-                    imgsrc1: "img/almond.jpg",
-                    calories1: 567,
+            data1: 'Calories per biscuit',
+            imgsrc1: "img/almond.jpg",
+            calories1: 567,
             foodItem2: "Sweets",
-                    imgsrc2: "img/almond.jpg",
-                    calories2: 567,
+            data2: 'Calories per 50g serving',
+            imgsrc2: "img/almond.jpg",
+            calories2: 567,
             foodItem3: "Yoghurt",
-                    imgsrc3: "img/almond.jpg",
-                    calories3: 567,
+            data3: 'Calories per 100ml serving',
+            imgsrc3: "img/almond.jpg",
+            calories3: 567,
         }
   ];
 

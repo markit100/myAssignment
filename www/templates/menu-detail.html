@@ -35,23 +35,28 @@
                 <a class="item list-inset item-thumbnail-left item item-button-right">
                     <img ng-src=" {{ menu.imgsrc1 }} ">
                     <h2>{{ menu.foodItem1 }}</h2>
+                    <p>{{ menu.data1 }}</p>
                     <button class="button button-positive" ng-click="count = count + {{ menu.calories1 }} "> {{ menu.calories1 }} </button>
+                    <button id="minus" class="button button-assertive" ng-click="count = count - {{ menu.calories1 }} "> - </button>
                 </a>
                 
                 <a class="item list-inset item-thumbnail-left item item-button-right">
                     <img ng-src=" {{ menu.imgsrc2 }} ">
                     <h2>{{ menu.foodItem2 }}</h2>
-                    <button class="button button-positive" ng-click="count = count + {{ menu.calories2 }} "> {{ menu.calories2 }} </button>
+                    <p>{{ menu.data2 }}</p>
+                    <button id="plus" class="button button-positive" ng-click="count = count + {{ menu.calories2 }} "> {{ menu.calories2 }} </button>
+                    <button id="minus" class="button button-assertive" ng-click="count = count - {{ menu.calories2 }} "> - </button>
                 </a>
                 
                 <a class="item list-inset item-thumbnail-left item item-button-right">
                     <img ng-src=" {{ menu.imgsrc3 }} ">
                     <h2>{{ menu.foodItem3 }}</h2>
-                    <button class="button button-positive" ng-click="count = count + {{ menu.calories3 }} "> {{ menu.calories3 }} </button>
+                    <p>{{ menu.data3 }}</p>
+                    <button id="plus" class="button button-positive" ng-click="count = count + {{ menu.calories3 }} "> {{ menu.calories3 }} </button>
+                    <button id="minus" class="button button-assertive" ng-click="count = count - {{ menu.calories3 }} "> - </button>
                 </a>
                 
                 
-
                 <p><a class="button button-energized button-block icon ion-arrow-left-b" href="#/tab/menus">&nbsp;Back to Menu</a>
                 </p>
                 <p><a class="button icon ion-settings button-block" ng-click="count = 0">&nbsp;Reset</a>

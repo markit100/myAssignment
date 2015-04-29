@@ -2,6 +2,8 @@
   This template gets placed in the menu tab's <ion-nav-view> directive.
   It was wired up in the app config (app.js) 
   The 'menus' data comes from its $scope within menuIndexCtrl (controller.js)
+  The menuCtrl pulls data from the menus service (service.js)
+  The menus service returns an array of menu data
 -->
 
 <ion-view title="Home">
@@ -12,10 +14,11 @@
     <ion-content overflow-scroll="true">
         <div class="list card">
 
-            <ion-item class="item-avatar item-icon-right" ng-repeat="menu in menus" type="item-text-wrap" href="#/tab/menu/{{menu.id}}">
-                <img ng-src="{{menu.food}}">
-                <h3>{{menu.title}}</h3>
-                <p>{{menu.description}}</p>
+            <!-- {{ expressions }} pulls data from the menus service (service.js) -->
+            <ion-item class="item-avatar item-icon-right" ng-repeat="menu in menus" type="item-text-wrap" href="#/tab/menu/{{ menu.id }}">
+                <img ng-src="{{ menu.food }}">
+                <h3>{{ menu.title }}</h3>
+                <p>{{ menu.description }}</p>
                 <i class="icon ion-chevron-right icon-accessory"></i>
             </ion-item>
 

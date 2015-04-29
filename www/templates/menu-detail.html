@@ -9,6 +9,7 @@
         <h2 class="title"></h2>
     </div>
 
+    <!-- enables scrolling -->
     <ion-content padding="true" overflow-scroll="true" class="has-header">
 
         <div id="myCalories">
@@ -31,29 +32,96 @@
             -->
 
             <a class="item list-inset item-thumbnail-left" ng-repeat="menu in menus | filter:search">
-
+                
+                <!-- Food item 1 -->
                 <a class="item list-inset item-thumbnail-left item item-button-right">
                     <img ng-src=" {{ menu.imgsrc1 }} ">
                     <h2>{{ menu.foodItem1 }}</h2>
                     <p>{{ menu.data1 }}</p>
-                    <button class="button button-positive" ng-click="count = count + {{ menu.calories1 }} "> {{ menu.calories1 }} </button>
-                    <button id="minus" class="button button-assertive" ng-click="count = count - {{ menu.calories1 }} "> - </button>
+                    <button id="plus" class="button button-icon icon round-button" ng-click="count = count + {{ menu.calories1 }} "> {{ menu.calories1 }} </button>
+                    <button id="minus" class="button button-icon icon round-button" ng-click="count = count - {{ menu.calories1 }} "> - </button>
                 </a>
                 
+                 <!-- Food item 2 -->
                 <a class="item list-inset item-thumbnail-left item item-button-right">
                     <img ng-src=" {{ menu.imgsrc2 }} ">
                     <h2>{{ menu.foodItem2 }}</h2>
                     <p>{{ menu.data2 }}</p>
-                    <button id="plus" class="button button-positive" ng-click="count = count + {{ menu.calories2 }} "> {{ menu.calories2 }} </button>
-                    <button id="minus" class="button button-assertive" ng-click="count = count - {{ menu.calories2 }} "> - </button>
+                    <button id="plus" class="button button-icon icon round-button" ng-click="count = count + {{ menu.calories2 }} "> {{ menu.calories2 }} </button>
+                    <button id="minus" class="button button-icon icon round-button" ng-click="count = count - {{ menu.calories2 }} "> - </button>
                 </a>
                 
+                 <!-- Food item 3 -->
                 <a class="item list-inset item-thumbnail-left item item-button-right">
                     <img ng-src=" {{ menu.imgsrc3 }} ">
                     <h2>{{ menu.foodItem3 }}</h2>
                     <p>{{ menu.data3 }}</p>
-                    <button id="plus" class="button button-positive" ng-click="count = count + {{ menu.calories3 }} "> {{ menu.calories3 }} </button>
-                    <button id="minus" class="button button-assertive" ng-click="count = count - {{ menu.calories3 }} "> - </button>
+                    <button id="plus" class="button button-icon icon round-button" ng-click="count = count + {{ menu.calories3 }} "> {{ menu.calories3 }} </button>
+                    <button id="minus" class="button button-icon icon round-button" ng-click="count = count - {{ menu.calories3 }} "> - </button>
+                </a>
+                
+                <!-- Food item 4 -->
+                <a class="item list-inset item-thumbnail-left item item-button-right">
+                    <img ng-src=" {{ menu.imgsrc4 }} ">
+                    <h2>{{ menu.foodItem4 }}</h2>
+                    <p>{{ menu.data4 }}</p>
+                    <button id="plus" class="button button-icon icon round-button" ng-click="count = count + {{ menu.calories4 }} "> {{ menu.calories4 }} </button>
+                    <button id="minus" class="button button-icon icon round-button" ng-click="count = count - {{ menu.calories4 }} "> - </button>
+                </a>
+                
+                <!-- Food item 5 -->
+                <a class="item list-inset item-thumbnail-left item item-button-right">
+                    <img ng-src=" {{ menu.imgsrc5 }} ">
+                    <h2>{{ menu.foodItem5 }}</h2>
+                    <p>{{ menu.data5 }}</p>
+                    <button id="plus" class="button button-icon icon round-button" ng-click="count = count + {{ menu.calories5 }} "> {{ menu.calories5 }} </button>
+                    <button id="minus" class="button button-icon icon round-button" ng-click="count = count - {{ menu.calories5 }} "> - </button>
+                </a>
+                
+                <!-- Food item 6 -->
+                <a class="item list-inset item-thumbnail-left item item-button-right">
+                    <img ng-src=" {{ menu.imgsrc6 }} ">
+                    <h2>{{ menu.foodItem6 }}</h2>
+                    <p>{{ menu.data6 }}</p>
+                    <button id="plus" class="button button-icon icon round-button" ng-click="count = count + {{ menu.calories6 }} "> {{ menu.calories6 }} </button>
+                    <button id="minus" class="button button-icon icon round-button" ng-click="count = count - {{ menu.calories6 }} "> - </button>
+                </a>
+                
+                <!-- Food item 7 -->
+                <a class="item list-inset item-thumbnail-left item item-button-right">
+                    <img ng-src=" {{ menu.imgsrc7 }} ">
+                    <h2>{{ menu.foodItem7 }}</h2>
+                    <p>{{ menu.data7 }}</p>
+                    <button id="plus" class="button button-icon icon round-button" ng-click="count = count + {{ menu.calories7 }} "> {{ menu.calories7 }} </button>
+                    <button id="minus" class="button button-icon icon round-button" ng-click="count = count - {{ menu.calories7 }} "> - </button>
+                </a>
+                
+                <!-- Food item 8 -->
+                <a class="item list-inset item-thumbnail-left item item-button-right">
+                    <img ng-src=" {{ menu.imgsrc8 }} ">
+                    <h2>{{ menu.foodItem8 }}</h2>
+                    <p>{{ menu.data8 }}</p>
+                    <button id="plus" class="button button-icon icon round-button" ng-click="count = count + {{ menu.calories8 }} "> {{ menu.calories8 }} </button>
+                    <button id="minus" class="button button-icon icon round-button" ng-click="count = count - {{ menu.calories8 }} "> - </button>
+                </a>
+                
+                <!-- Food item 9 -->
+                <a class="item list-inset item-thumbnail-left item item-button-right">
+                    <img ng-src=" {{ menu.imgsrc9 }} ">
+                    <h2>{{ menu.foodItem9 }}</h2>
+                    <p>{{ menu.data9 }}</p>
+                    <button id="plus" class="button button-icon icon round-button" ng-click="count = count + {{ menu.calories9 }} "> {{ menu.calories9 }} </button>
+                    <button id="minus" class="button button-icon icon round-button" ng-click="count = count - {{ menu.calories9 }} "> - </button>
+                </a>
+                
+                
+                <!-- Food item 10 -->
+                <a class="item list-inset item-thumbnail-left item item-button-right">
+                    <img ng-src=" {{ menu.imgsrc11 }} ">
+                    <h2>{{ menu.foodItem11 }}</h2>
+                    <p>{{ menu.data11 }}</p>
+                    <button id="plus" class="button button-icon icon round-button" ng-click="count = count + {{ menu.calories11 }} "> {{ menu.calories11 }} </button>
+                    <button id="minus" class="button button-icon icon round-button" ng-click="count = count - {{ menu.calories11 }} "> - </button>
                 </a>
                 
                 
@@ -65,13 +133,3 @@
         </div>
     </ion-content>
 </ion-view>
-
-<!--
-<a class="item item-icon-left item-button-right">
-    <i class="icon ion-ios-nutrition"></i>
-    <h2>Potatoes</h2>
-    <p>Calories per 100g</p>
-
-    <button class="button button-positive" ng-click="count = count + 20"> +20 </button>
-</a>
--->

@@ -6,15 +6,19 @@
   The menus service returns an array of menu data
 -->
 
-<ion-view title="Calorific App">
+<ion-view title="Home">
     <div class="bar bar-subheader">
-        <h2 class="title">Home</h2>
+        <h2 class="title">Calorific App</h2>
     </div>
 
+    <!-- enables scrolling -->
     <ion-content overflow-scroll="true">
         <div class="list card">
 
-            <!-- {{ expressions }} pulls data from the menus service (service.js) -->
+            <!-- 
+                {{ expressions }} pull data from the menus service (service.js)
+                and this is inserted into the view. Below are the index page details
+            -->
             <ion-item class="item-avatar item-icon-right" ng-repeat="menu in menus" type="item-text-wrap" href="#/tab/menu/{{ menu.id }}">
                 <img ng-src="{{ menu.food }}">
                 <h3>{{ menu.title }}</h3>

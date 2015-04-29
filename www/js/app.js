@@ -5,6 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'calorific.services' is found in services.js
 // 'calorific.controllers' is found in controllers.js
+
 angular.module('calorific', ['ionic', 'calorific.services', 'calorific.controllers'])
 
 .config(function ($stateProvider, $urlRouterProvider) {
@@ -22,6 +23,7 @@ angular.module('calorific', ['ionic', 'calorific.services', 'calorific.controlle
     })
 
     // the menu tab has its own child nav-view and history
+    // home or index tab state
     .state('tab.menu-index', {
         url: '/menus',
         views: {
@@ -32,6 +34,7 @@ angular.module('calorific', ['ionic', 'calorific.services', 'calorific.controlle
         }
     })
 
+    // food detail tab state
     .state('tab.menu-detail', {
         url: '/menu/:menuId',
         views: {
@@ -42,6 +45,7 @@ angular.module('calorific', ['ionic', 'calorific.services', 'calorific.controlle
         }
     })
 
+    // about this app tab state
     .state('tab.about', {
         url: '/about',
         views: {
@@ -51,6 +55,7 @@ angular.module('calorific', ['ionic', 'calorific.services', 'calorific.controlle
         }
     })
 
+    // contact me tab state
     .state('tab.contact', {
         url: '/contact',
         views: {

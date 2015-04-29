@@ -27,13 +27,14 @@
             -->
 
             <!-- 
-                This displays original list in list format 
+                The following 10 item classes display original list of foods in list format 
                 from services.js in {{ expression format }}
             -->
 
             <a class="item list-inset item-thumbnail-left" ng-repeat="menu in menus | filter:search">
                 
                 <!-- Food item 1 -->
+               
                 <a class="item list-inset item-thumbnail-left item item-button-right">
                     <img ng-src=" {{ menu.imgsrc1 }} ">
                     <h2>{{ menu.foodItem1 }}</h2>
@@ -42,7 +43,8 @@
                     <button id="minus" class="button button-icon icon round-button" ng-click="count = count - {{ menu.calories1 }} "> - </button>
                 </a>
                 
-                 <!-- Food item 2 -->
+                <!-- Food item 2 -->
+                
                 <a class="item list-inset item-thumbnail-left item item-button-right">
                     <img ng-src=" {{ menu.imgsrc2 }} ">
                     <h2>{{ menu.foodItem2 }}</h2>
@@ -51,7 +53,8 @@
                     <button id="minus" class="button button-icon icon round-button" ng-click="count = count - {{ menu.calories2 }} "> - </button>
                 </a>
                 
-                 <!-- Food item 3 -->
+                <!-- Food item 3 -->
+               
                 <a class="item list-inset item-thumbnail-left item item-button-right">
                     <img ng-src=" {{ menu.imgsrc3 }} ">
                     <h2>{{ menu.foodItem3 }}</h2>
@@ -61,6 +64,7 @@
                 </a>
                 
                 <!-- Food item 4 -->
+                
                 <a class="item list-inset item-thumbnail-left item item-button-right">
                     <img ng-src=" {{ menu.imgsrc4 }} ">
                     <h2>{{ menu.foodItem4 }}</h2>
@@ -70,6 +74,7 @@
                 </a>
                 
                 <!-- Food item 5 -->
+                
                 <a class="item list-inset item-thumbnail-left item item-button-right">
                     <img ng-src=" {{ menu.imgsrc5 }} ">
                     <h2>{{ menu.foodItem5 }}</h2>
@@ -79,6 +84,7 @@
                 </a>
                 
                 <!-- Food item 6 -->
+                
                 <a class="item list-inset item-thumbnail-left item item-button-right">
                     <img ng-src=" {{ menu.imgsrc6 }} ">
                     <h2>{{ menu.foodItem6 }}</h2>
@@ -88,6 +94,7 @@
                 </a>
                 
                 <!-- Food item 7 -->
+                
                 <a class="item list-inset item-thumbnail-left item item-button-right">
                     <img ng-src=" {{ menu.imgsrc7 }} ">
                     <h2>{{ menu.foodItem7 }}</h2>
@@ -97,6 +104,7 @@
                 </a>
                 
                 <!-- Food item 8 -->
+                
                 <a class="item list-inset item-thumbnail-left item item-button-right">
                     <img ng-src=" {{ menu.imgsrc8 }} ">
                     <h2>{{ menu.foodItem8 }}</h2>
@@ -106,6 +114,7 @@
                 </a>
                 
                 <!-- Food item 9 -->
+                
                 <a class="item list-inset item-thumbnail-left item item-button-right">
                     <img ng-src=" {{ menu.imgsrc9 }} ">
                     <h2>{{ menu.foodItem9 }}</h2>
@@ -116,6 +125,7 @@
                 
                 
                 <!-- Food item 10 -->
+                
                 <a class="item list-inset item-thumbnail-left item item-button-right">
                     <img ng-src=" {{ menu.imgsrc11 }} ">
                     <h2>{{ menu.foodItem11 }}</h2>
@@ -124,11 +134,16 @@
                     <button id="minus" class="button button-icon icon round-button" ng-click="count = count - {{ menu.calories11 }} "> - </button>
                 </a>
                 
+                <!-- Back Button -->
                 
                 <p><a class="button button-energized button-block icon ion-arrow-left-b" href="#/tab/menus">&nbsp;Back to Menu</a>
                 </p>
+                
+                <!-- Reset Button -->
+                
                 <p><a class="button icon ion-settings button-block" ng-click="count = 0">&nbsp;Reset</a>
                 </p>
+                
             </a>
         </div>
     </ion-content>
